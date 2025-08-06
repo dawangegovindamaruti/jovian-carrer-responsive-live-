@@ -1,0 +1,76 @@
+<html>
+  <head>
+    <title> flexbox model</title>
+
+    <style>
+
+        #container{
+          background-color:coral;
+          border: 1px solid black;
+          font-family: sans-serif;
+          padding: 10px;
+          display: flex;
+          flex-direction: row;
+          height: 350px;
+        
+          /* justify-content: center; */
+           align-items: center;
+
+        }
+
+        .item{
+             border:1px solid black;
+             padding:10px 70px;
+             background-color: cornflowerblue;
+             /* text-align: center ; */
+        }
+
+        /* #item-1{
+          align-self: flex-end;
+        }
+
+          #item-3{
+          align-self: flex-end;
+        } */
+
+        #item-1{
+        
+          /* flex-grow: 1;
+         */
+          flex-shrink: 1;
+        }
+
+          #item-2{
+          /* flex-grow: 4; */
+          flex-shrink: 3;
+        }
+
+          #item-3{
+          /* flex-grow: 3; */
+          flex-shrink: 1;
+        }
+    </style>
+  </head>
+
+  <body>
+    
+    <div id="container">
+      <div id="item-1" class="item">
+           Item-1   Item-1 Item-1   Item-1  
+         
+      </div>
+
+        <div id="item-2" class="item">
+           Item-2  Item-1   Item-1  Item-1  
+      </div>
+
+        <div id="item-3" class="item">
+           Item-3    Item-1   Item-1  Item-1  
+      </div>
+
+        <!-- <div id="item-4" class="item">
+           Item-4
+      </div> -->
+    </div>
+  </body>
+</html>
